@@ -45,7 +45,6 @@ export class WidgetComponent extends Component {
 
     onClick = () => {
         resetUnreadCount();
-
     };
 
     handleResize = () => {
@@ -112,6 +111,7 @@ export class WidgetComponent extends Component {
             `sk-link-color-${isLinkColorDark ? 'dark' : 'light'}`
         ];
 
+        // create and import messengerButton
         let messengerButton;
 
         if (displayStyle === DISPLAY_STYLE.BUTTON && !appState.embedded) {
